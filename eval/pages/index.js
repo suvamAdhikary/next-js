@@ -15,7 +15,7 @@ export default function Home({ users }) {
 
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://reqres.in/api/users?page=2`);
+  const res = await fetch(`https://reqres.in/api/users`);
   const users = await res.json();
   console.log("frm index", users);
   return {
